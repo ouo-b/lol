@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>League Of Legends</title>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:700,900&display=swap" rel="stylesheet">
+
+</head>
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif;}
+		#monitor{ position: fixed; 
+				background: white;
+				padding:5px; 
+				top:0; right:0; 
+				width:70px; height:20px;
+				}
+
+		@keyframes tt1{from{top:0px; opacity: 0;} 
+					  to{top:100px; opacity: 1;}}
+		@keyframes tt2{from{top:0px; opacity: 0;} 
+					  to{top:300px; opacity: 1;}}
+		@keyframes tt3{from{top:100px; opacity: 0;} 
+					  to{top:0px; opacity: 1;}}
+					  			  
+		@keyframes ro{from{right:0px; opacity: 0;} 
+					  to{right: 58%; opacity: 1;}}
+
+
+		body{margin: 0; background: black;}
+		header .wrap{background: url(1.gif); background-size: cover; height: 700px; color: white; font-size: 50px;}
+		section{height: 700px; color: white; position: relative;}
+		#t1{position: absolute; left: 700px; opacity: 0;}
+		#t2{position: absolute; font-size: 50px; left: 300px; opacity: 0;}
+		.i1{width: 800px; position: absolute; display: block; opacity: 0;}
+		#t3{position: absolute; font-size: 25px; line-height: 2.0;left: 850px; opacity: 0;}
+		#t4{position: absolute; font-size: 50px; left: 300px; opacity: 0;}
+		#t5{position: absolute; font-size: 40px; opacity:0 ; top:100px;}
+		#t6{position: absolute; font-size: 20px; opacity:0; top:200px;}
+		#m1{position: absolute; width: 800px; height: 500px; left: 850px; opacity:0}
+		#bb{background: url(b.png); background-size: cover; background-attachment: fixed;}
+		#cc{background: url(1.png); background-size: cover; }
+		.fo{text-align: center; font-size: 30px; padding-top: 300px; }
+	</style>
+<body>
+	<div id="monitor"></div>
+	<header>
+		<div class="wrap">
+			<h1 id="t1">League Of Legends</h1></div>
+	</header>
+	<section class="s1">
+		<div class="text">
+			<h1 id="t2">리그 오브 레전드에 오신 여러분을 환영합니다.</h1>
+		</div>
+	</section>
+
+	<section class="s2">
+		<div class="text">
+			<img src="2.jpg" class="i1" id="f3">
+			<p id="t3">
+			세계 최고의 MOBA(Multiplayer Online Battle Arena) 게임입니다.<br>
+			끝없이 이어지는 실시간 전투와 협동을 통한 팀플레이, RTS와 RPG를 <br>하나의 게임에서 동시에 즐길 수 있는 새로운 장르의 온라인 게임입니다. <br>두 팀은 각기 독특한 특성과 플레이스타일을 자랑하는 강력한 챔피언을 <br>소환하여, 다양한 모드의 전장에서 정면 대결을 펼칩니다.<br>
+			신규 챔피언이 끊임없이 추가되며, 지속적인 업데이트가 이루어지고, <br>흥미진진한 e스포츠 대회의 중심이기도 한 리그 오브 레전드에서 많은 <br>동료 소환사들과 함께 박진감 넘치는 전투를 즐겨보세요! <br></p>
+		</div>
+	</section>
+	<section style="height: px" class="s3" id="bb">
+		<div class="text">
+			<h1 id="t4">다양한 챔피언들을 만나보세요</h1>
+		</div>
+	</section>
+	<section class="s4">
+		<div>
+			<h1 id="t5">승리의 지름길</h1>
+			<p id="t6">리그 오브 레전드에서 중요한 구조물에는<br> 포탑과 억제기, 넥서스가 있습니다.<br> 승리를 쟁취하려면 아군의 구조물을 방어하고<br> 적군의 구조물을 파괴해야 합니다.</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/mbB66w27T-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="m1"></iframe>
+		</div>
+	</section>
+	<section class="s5" id="cc">
+		<div>
+			
+			
+		</div>
+	</section>
+	<section class="s6">
+		<footer class="fo">HKNUDESIGN2017286042LEEJIYEON</footer>
+	</section>
+
+
+	<script type="text/javascript">
+		window.onscroll = function(){
+			var t = document.documentElement.scrollTop + document.body.scrollTop;
+			monitor.innerHTML = t.toFixed(1);
+
+		if(t > 10){
+			t1.style.animation = "tt1 1s forwards";
+		}else{			
+			t1.style.animation = "";}
+
+		if(t > 600){
+			t2.style.animation = "tt2 1s forwards";
+		}else{			
+			t2.style.animation = "";}
+
+		if(t > 1100){
+			f3.style.animation = "ro 3s forwards";
+			t3.style.animation = "tt3 1s forwards";
+		}else{			
+			f3.style.animation = "";
+			t3.style.animation = "";}
+		if(t > 1900){
+			t4.style.animation = "tt3 1s forwards";
+		}else{			
+			t4.style.animation = "";}	
+		if(t > 2750){
+			t5.style.animation = "ro 1s forwards";
+			t6.style.animation = "ro 1s forwards";
+			m1.style.animation = "tt1 1s forwards";
+		}else{			
+			t5.style.animation = "";	
+			t6.style.animation = "";
+			m1.style.animation = "";}
+	}
+	</script>
+</body>
+</html>
